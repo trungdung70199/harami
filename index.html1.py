@@ -2,9 +2,8 @@
 
 <hr>
 
-<img src="zoro.jpg.jpg"
+<img src="zoro.jpg.jpg">
 
-<!--
 
 <hr>
 

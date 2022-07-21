@@ -7,15 +7,21 @@
     <body>
       <h1 id="tanaka">JavaScript test</h1>
       
-      <button onclick="aloha()">CLICK ME!</button>
+      <img id="gazo" src="neko.jpg" onclick="aloha()">
       
-      <img id="gazo" src="zoro.jpg.jpg">
-
       <script>
+        // 画像ファイルの番号
+        let num = 0
+          
         function aloha() {
+          const files = ["zoro.jpg.jpg", "Mihawk-1.png", "asura.jpg"]
+          num++
+          if( num >= files.length ) {
+            num = 0
+          }
 
           let gazo = document.getElementById('gazo')
-          gazo.src = 'Mihawk-1.png'
+          gazo.src = files[num]
         }
       </script>
     </body>
